@@ -107,11 +107,9 @@ function iniciarMenu() {
 
     dropdowns.forEach(dropdown => {
 
-        const link = dropdown.querySelector(":scope > a");
+        const titulo = dropdown.querySelector(":scope > a");
 
-        if (!link) return;
-
-        link.addEventListener("click", function (e) {
+        titulo.addEventListener("click", function (e) {
 
             if (window.innerWidth <= 992) {
 
@@ -134,6 +132,16 @@ function iniciarMenu() {
     });
 
 }
+
+document.querySelectorAll(".submenu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        document.getElementById("nav-menu").classList.remove("active");
+
+    });
+
+});
 
 cargarComponentes();
 
