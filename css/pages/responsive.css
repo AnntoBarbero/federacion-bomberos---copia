@@ -762,6 +762,30 @@
     .calendario-container iframe{
         height:650px;
     }
+
+    .dropdown .submenu{
+        display:none;
+        position:static;
+        background:transparent;
+        box-shadow:none;
+        width:100%;
+        padding:0;
+        margin-top:10px;
+    }
+
+    .dropdown.active .submenu{
+        display:block;
+    }
+
+    .dropdown .submenu li{
+        text-align:center;
+    }
+
+    .dropdown .submenu a{
+        padding:10px 0;
+        font-size:1rem;
+        color:#ddd;
+    }
 }
 
 
