@@ -539,7 +539,9 @@
 
     .autoridad-card img{
 
-        height:280px;
+        height:340px;
+    object-fit:cover;
+    object-position:center top;
 
     }
 }
@@ -668,7 +670,9 @@
 
     .autoridad-card img{
 
-        height:260px;
+        height:320px;
+    object-fit:cover;
+    object-position:center top;
 
     }
 
