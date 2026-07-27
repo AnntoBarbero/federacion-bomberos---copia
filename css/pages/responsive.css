@@ -808,7 +808,7 @@
     .submenu a{
         display: block;
         padding: 12px 20px;
-        color: #222 !important;
+        color: #fff !important;
         pointer-events: auto;
     }
 }
