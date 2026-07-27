@@ -93,6 +93,7 @@ body{
     font-size:.70rem;
     transition:.3s;
 }
+
 /* Dropdown */
 .menu li {
     position: relative;
@@ -103,49 +104,29 @@ body{
     position:absolute;
     top:130%;
     left:0;
-
     min-width:240px;
-
     background:#fff;
-
     border-radius:12px;
-
     overflow:hidden;
-
     list-style:none;
-
     padding:10px 0;
-
     box-shadow:0 15px 35px rgba(0,0,0,.15);
-
     opacity:0;
-
     visibility:hidden;
-
     transform:translateY(12px);
-
     transition:.25s ease;
 }
 
 .submenu li a{
-
     display:block;
-
     padding:14px 22px;
-
     color:#333;
-
     text-decoration:none;
-
     transition:.25s;
-
 }
 .submenu li a:hover{
-
     background:#c1121f;
-
     color:#fff;
-
     padding-left:30px;
 
 }
@@ -271,55 +252,37 @@ body{
     box-shadow:0 10px 25px rgba(255,255,255,.25);
 }
 
-/*==========================
-BOTÓN ACCESO AL SISTEMA
-==========================*/
+/* BOTÓN ACCESO AL SISTEMA */
 
 .btn-sistema{
-
     display:inline-flex;
     align-items:center;
     gap:8px;
-
     padding:10px 18px;
-
     border-radius:50px;
-
     background:linear-gradient(135deg,#c1121f,#e5383b);
-
     color:#fff;
     text-decoration:none;
-
     font-family:"Poppins",sans-serif;
     font-size:.9rem;
     font-weight:700;
-
     border:1px solid rgba(255,255,255,.15);
-
     box-shadow:
         0 10px 25px rgba(193,18,31,.30);
-
     transition:all .35s ease;
-
     overflow:hidden;
     position:relative;
-
 }
 
 /* Brillo */
 
 .btn-sistema::before{
-
     content:"";
-
     position:absolute;
-
     top:0;
     left:-120%;
-
     width:60%;
     height:100%;
-
     background:
     linear-gradient(
         120deg,
@@ -327,46 +290,32 @@ BOTÓN ACCESO AL SISTEMA
         rgba(255,255,255,.35),
         transparent
     );
-
     transition:.6s;
-
 }
 
 .btn-sistema:hover::before{
-
     left:140%;
-
 }
 
 /* Hover */
 
 .btn-sistema:hover{
-
     color:#fff;
-
     transform:translateY(-3px);
-
-    box-shadow:
-        0 18px 35px rgba(193,18,31,.45);
-
+    box-shadow: 0 18px 35px rgba(193,18,31,.45);
 }
 
 /* Click */
 
 .btn-sistema:active{
-
     transform:scale(.97);
-
 }
 
 .btn-sistema i{
-
     font-size:1rem;
-
 }
 
 .btn-sistema span{
-
     white-space:nowrap;
 
 }
@@ -718,4 +667,10 @@ BOTÓN ACCESO AL SISTEMA
     background:#a50f19;
     transform:translateY(-3px);
     box-shadow:0 10px 20px rgba(193,18,31,.30);
+}
+
+.institucional .btn-rojo{
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
 }
