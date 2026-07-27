@@ -113,60 +113,6 @@
         justify-content:center;
     }
 
-    /* HISTORIA */
-
-    .introduccion-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .timeline::before{
-
-        left:20px;
-
-    }
-
-    .timeline-item{
-
-        width:100%;
-
-        left:0 !important;
-
-        padding-left:65px;
-
-        padding-right:15px;
-
-    }
-
-    .timeline-item::before{
-
-        left:10px !important;
-
-    }
-
-    .galeria-grid{
-
-        columns:2;
-
-    }
-
-    .btn-sistema{
-
-        width:46px;
-        height:46px;
-
-        padding:0;
-
-        justify-content:center;
-
-    }
-
-    .btn-sistema span{
-
-        display:none;
-
-    }
 
     /* ESTATUTO */
 
@@ -597,12 +543,6 @@
 
     .estadisticas-grid{
     grid-template-columns:1fr;
-    }
-
-    .historia-titulo h2{
-
-        font-size:2.2rem;
-
     }
 
     .galeria-grid{
