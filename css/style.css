@@ -670,7 +670,5 @@ body{
 }
 
 .institucional .btn-rojo{
-    display: block;
-    width: fit-content;
-    margin: 40px auto 0;
+    align-items: center;
 }
