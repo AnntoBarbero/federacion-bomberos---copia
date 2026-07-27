@@ -24,7 +24,7 @@ body{
     display:inline-flex;
     align-items:center;
     gap:12px;
-    background:var(--rojo);
+    background:#c1121f;
     color:#fff;
     padding:12px 24px;
     border-radius:50px;
