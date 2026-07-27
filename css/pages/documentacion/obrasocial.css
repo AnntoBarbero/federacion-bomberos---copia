@@ -1,0 +1,253 @@
+/*SEMPRE PAGE*/
+
+:root{
+
+    --rojo:#c1121f;
+    --rojo-hover:#a40f1a;
+    --oscuro:#151515;
+    --gris:#f6f7fb;
+    --texto:#555;
+    --blanco:#fff;
+
+}
+
+/*SECCIONES*/
+
+.sempre-section{
+    padding:100px 0;
+}
+
+.fondo-gris{
+    background:var(--gris);
+}
+
+/*HERO*/
+
+.sempre-hero{
+    position:relative;
+    height:72vh;
+    min-height:600px;
+    display:flex;
+    align-items:center;
+}
+
+.hero.sempre-hero{
+    background-image: url("../../../img/documentacion/documentacion.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sempre-hero .overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.25)
+    );
+
+}
+
+.sempre-hero .hero-content{
+    position:relative;
+    z-index:5;
+    max-width:700px;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--rojo);
+    color:#fff;
+    padding:12px 24px;
+    border-radius:50px;
+    font-weight:700;
+    margin-bottom:30px;
+    letter-spacing:.8px;
+    margin-top: 20px;
+
+}
+
+.sempre-hero h1{
+    font-size:clamp(3rem,6vw,5rem);
+    font-weight:800;
+    color:#fff;
+    line-height:1.05;
+    margin-bottom:30px;
+}
+
+.sempre-hero span{
+    color:#ffd166;
+}
+
+.sempre-hero p{
+    color:#ededed;
+    line-height:1.9;
+    font-size:1.15rem;
+}
+
+/*INTRO*/
+
+.intro-card{
+    background:#fff;
+    border-radius:25px;
+    padding:60px;
+    display:flex;
+    gap:40px;
+    align-items:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.intro-icon{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        var(--rojo),
+        #ef233c
+    );
+    color:#fff;
+    font-size:45px;
+    flex-shrink:0;
+}
+
+.intro-texto h2{
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.intro-texto p{
+    color:var(--texto);
+    line-height:2;
+    margin:0;
+}
+
+/*DOCUMENTO*/
+
+.documento-card{
+    background:#fff;
+    border-radius:25px;
+    padding:45px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top: 10px;
+    gap:40px;
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+
+.documento-info{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.pdf-icon{
+    width:90px;
+    height:90px;
+    border-radius:20px;
+    background:#ffe7ea;
+    color:var(--rojo);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+}
+
+.documento-info h3{
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.documento-info span{
+    color:#777;
+}
+
+.documento-botones{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-ver,
+.btn-descargar{
+    padding:15px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.35s;
+}
+
+.btn-ver{
+    background:var(--rojo);
+    color:#fff;
+}
+
+.btn-ver:hover{
+    background:var(--rojo-hover);
+    transform:translateY(-3px);
+}
+
+.btn-descargar{
+    border:2px solid var(--rojo);
+    color:var(--rojo);
+}
+
+.btn-descargar:hover{
+    background:var(--rojo);
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/*ASPECTOS*/
+
+.aspectos-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.aspecto-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.aspecto-card:hover{
+    transform:translateY(-8px);
+}
+
+.aspecto-card i{
+    font-size:42px;
+    color:#c1121f;
+    margin-bottom:20px;
+}
+
+.aspecto-card h4{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.aspecto-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+

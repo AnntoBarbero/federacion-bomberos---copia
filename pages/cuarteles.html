@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cuarteles | Federación de Bomberos Voluntarios La Pampa</title>
+
+        <!-- FAVICON -->
+        <link rel="icon" href="../img/logo.png">
+
+        <!-- SEO -->
+        <meta name="description" content="Mapa interactivo de cuarteles de bomberos voluntarios de La Pampa">
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <!-- LEAFLET -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+        <!-- FUENTES -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/pages/cuarteles.css">
+        <link rel="stylesheet" href="../css/pages/responsive.css">
+        
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <div id="navbar-container"></div>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div>
+                    <h1>CUARTELES</h1>
+                    <p>
+                        Conocé la ubicación de los cuarteles de bomberos
+                        voluntarios en toda la provincia de La Pampa.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="hero-botones">
+        <button id="btn-cercano" class="btn-principal">
+            📍 Encontrar cuartel más cercano
+        </button>
+
+        </div>
+        <!-- MAPA -->
+        <section class="mapa-cuarteles">
+            <div class="container">
+                <div class="titulo-seccion">
+                    <h2>MAPA INTERACTIVO</h2>
+                    <p>
+                        Explorá los distintos cuarteles distribuidos
+                        en toda la provincia.
+                    </p>
+                </div>
+
+                <div id="detalle-cuartel"></div>
+
+                <!-- LEYENDA -->
+                <div class="leyenda-zonas">
+                    <span class="filtro-zona zona1" data-zona="I">Zona I</span>
+                    <span class="filtro-zona zona2" data-zona="II">Zona II</span>
+                    <span class="filtro-zona zona3" data-zona="III">Zona III</span>
+                    <span class="filtro-zona zona4" data-zona="IV">Zona IV</span>
+                    <span class="filtro-zona zona5" data-zona="V">Zona V</span>
+                    <span class="filtro-zona zona6" data-zona="VI">Zona VI</span>
+                    <span class="filtro-zona todas-zonas" data-zona="TODAS">Todas</span>
+                </div>
+
+                <!-- BUSCADOR -->
+                <div class="buscador-cuarteles">
+                    <input  type="text" id="buscarCuartel" placeholder="🔍 Buscar cuartel...">
+                </div>
+
+                <!-- MAPA -->
+                <div id="mapa"></div>
+
+                <!-- ESTADISTICAS -->
+                <div class="estadisticas-cuarteles">
+                    <div class="row g-4 text-center">
+                        <div class="col">
+                            <div class="stat-box">
+                                <i class="fa-solid fa-building"></i>
+                                <h3 id="total-cuarteles">0</h3>
+                                <p>Cuarteles</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="stat-box">
+                                <i class="fa-solid fa-map"></i>
+                                <h3>6</h3>
+                                <p>Zonas Operativas</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="stat-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h3>La Pampa</h3>
+                                <p>Cobertura Provincial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LISTADO -->
+                <div class="listado-cuarteles">
+                    <div class="titulo-seccion">
+                        <h2>CUARTELES DE LA PAMPA</h2>
+                        <p>
+                            Instituciones distribuidas estratégicamente
+                            para brindar respuesta en toda la provincia.
+                        </p>
+                    </div>
+                    <div class="row g-4 justify-content-center" id="contenedor-cuarteles"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL FICHA CUARTEL -->
+        <div class="modal fade" id="modalCuartel" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h5 class="modal-title">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            Información del cuartel
+                        </h5>
+
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body" id="contenidoModalCuartel">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div id="footer-container"></div>
+        <!-- BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- LEAFLET -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <!-- APP -->
+        <script src="../js/app.js"></script>
+        <!-- CUARTELES -->
+         <script src="../js/cuarteles.js"></script>
+        <!-- MAPA -->
+        <script src="../js/mapa.js"></script>
+    </body>
+</html>

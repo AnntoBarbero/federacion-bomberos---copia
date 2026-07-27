@@ -1,0 +1,329 @@
+/*=====================================
+=         AUTORIDADES PAGE            =
+=====================================*/
+
+:root{
+    --rojo:#c1121f;
+    --rojo-hover:#a40f1a;
+    --gris:#f6f7fb;
+    --texto:#5b5b5b;
+    --oscuro:#1b1b1b;
+    --blanco:#fff;
+}
+
+/*=========================
+SECCIONES
+=========================*/
+
+.autoridades-section{
+    padding:100px 0;
+}
+
+.fondo-gris{
+    background:var(--gris);
+}
+
+.titulo-seccion{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.titulo-seccion h2{
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:20px;
+    color:var(--oscuro);
+}
+
+.titulo-seccion p{
+    max-width:750px;
+    margin:auto;
+    color:#666;
+    line-height:1.9;
+}
+
+/*=========================
+HERO
+=========================*/
+
+.autoridades-hero{
+    position:relative;
+    height:72vh;
+    min-height:600px;
+    display:flex;
+    align-items:center;
+    
+}
+
+.autoridades-hero .overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.25)
+    );
+}
+
+.autoridades-hero .hero-content{
+    position:relative;
+    z-index:5;
+    max-width:700px;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:var(--rojo);
+    color:#fff;
+    padding:12px 24px;
+    border-radius:50px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.autoridades-hero h1{
+    color:white;
+    font-size:clamp(3rem,6vw,5rem);
+    font-weight:800;
+    line-height:1.05;
+    margin-bottom:30px;
+}
+
+.autoridades-hero h1 span{
+    color:#ffd166;
+}
+
+.autoridades-hero p{
+    color:#ededed;
+    font-size:1.15rem;
+    line-height:1.9;
+}
+
+/*=========================
+INTRO
+=========================*/
+
+.intro-card{
+
+    background:#fff;
+    border-radius:25px;
+    padding:60px;
+
+    display:flex;
+    gap:40px;
+    align-items:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.intro-icon{
+
+    width:110px;
+    height:110px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--rojo),
+        #ef233c
+    );
+
+    color:white;
+    font-size:45px;
+
+    flex-shrink:0;
+
+}
+
+.intro-texto h2{
+
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:20px;
+
+}
+
+.intro-texto p{
+
+    color:var(--texto);
+    line-height:2;
+
+}
+
+/*=========================
+PRESIDENTE
+=========================*/
+
+.presidente-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.presidente-card img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.presidente-info{
+
+    padding:60px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.presidente-info .cargo{
+
+    display:inline-block;
+
+    background:var(--rojo);
+
+    color:white;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    width:max-content;
+
+}
+
+.presidente-info h2{
+
+    font-size:2.4rem;
+    font-weight:800;
+    margin-bottom:20px;
+
+}
+
+.presidente-info p{
+
+    color:#666;
+    line-height:1.9;
+
+}
+
+/*=========================
+GRID
+=========================*/
+
+.autoridades-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+
+    gap:35px;
+
+}
+
+.autoridad-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border:2px solid transparent;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.autoridad-card:hover{
+    transform:translateY(-10px);
+
+    border-color:#c1121f;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.12),
+        0 0 0 4px rgba(193,18,31,.08);
+}
+
+
+.autoridad-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    object-position:center top;
+}
+
+.autoridad-info{
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.autoridad-info h3{
+
+    font-size:1.35rem;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+.autoridad-info span{
+
+    display:inline-block;
+
+    color:var(--rojo);
+
+    font-weight:600;
+
+}
+
+/*=========================
+ANIMACION
+=========================*/
+
+.autoridad-card,
+.presidente-card,
+.intro-card{
+
+    transition:.35s;
+
+}
+
+.intro-card:hover,
+.presidente-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
