@@ -786,6 +786,31 @@
         font-size:1rem;
         color:#ddd;
     }
+
+    .submenu{
+        position: static !important;
+        display: none;
+        background: #fff;
+        border-radius: 12px;
+        margin: 10px 15px;
+        padding: 10px 0;
+        z-index: 9999;
+    }
+
+    .dropdown.active .submenu{
+        display: block;
+    }
+
+    .submenu li{
+        width: 100%;
+    }
+
+    .submenu a{
+        display: block;
+        padding: 12px 20px;
+        color: #222 !important;
+        pointer-events: auto;
+    }
 }
 
 
