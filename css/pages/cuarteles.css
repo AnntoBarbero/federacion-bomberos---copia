@@ -20,6 +20,18 @@ body{
     margin:auto;
 }
 
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:var(--rojo);
+    color:#fff;
+    padding:12px 24px;
+    border-radius:50px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
 /* MAPA CUARTELES */
 
 .mapa-cuarteles{
