@@ -104,13 +104,6 @@ function mostrarCuarteles(lista){
                 </div>
                 <div class="card-header-cuartel">
 
-                    <div class="icono-cuartel"
-                        style="background:${colorZona}">
-
-                        <i class="fa-solid fa-fire-flame-curved"></i>
-
-                    </div>
-
                     <div>
 
                         <h3>${cuartel.localidad}</h3>
