@@ -96,9 +96,12 @@ function mostrarCuarteles(lista){
 
         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4">
 
-            <div class="card-cuartel"
-                style="border-top:6px solid ${colorZona};">
-
+            <div class="card-cuartel" style="border-top:6px solid ${colorZona};">
+                <div class="card-imagen">
+                        <img
+                            src="${cuartel.imagen || '../img/cuarteles/sin-imagen.jpg'}"
+                            alt="${cuartel.nombre}">
+                    </div>
                 <div class="card-header-cuartel">
 
                     <div class="icono-cuartel"

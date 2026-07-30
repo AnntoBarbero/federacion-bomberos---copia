@@ -443,7 +443,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.trenel@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/trenel.png",
         galeria:[],
         redes:{
             facebook:"",
