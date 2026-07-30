@@ -89,6 +89,7 @@ function mostrarCuarteles(lista){
     contenedor.innerHTML = "";
 
     lista.forEach(cuartel=>{
+        console.log(cuartel.localidad, cuartel.imagen);
 
         const colorZona = coloresZona[cuartel.zona];
 
@@ -99,7 +100,8 @@ function mostrarCuarteles(lista){
             <div class="card-cuartel" style="border-top:6px solid ${colorZona};">
                 <div class="card-imagen">
                         <img
-    src="../img/cuarteles/trenel.PNG"
+                        
+    src="${cuartel.imagen}"
     alt="Prueba">
                     </div>
                 <div class="card-header-cuartel">
