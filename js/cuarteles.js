@@ -51,7 +51,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.rancul@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/rancul.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -81,7 +81,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.realico@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/realico.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -202,7 +202,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.arata@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/arata.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -232,7 +232,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.embajadormartini@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/embajador.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -262,7 +262,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.ingenieroluiggi@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/luiggi.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -322,7 +322,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.parera@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/parera.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -413,7 +413,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.santaisabel@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/santa isabel.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -473,7 +473,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.victorica@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/victorica.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -564,7 +564,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.catrilo@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/catrilo.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -654,7 +654,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.miguelcane@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/cane.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -714,7 +714,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.winifreda@bomberosargentina.org"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/winifreda.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -865,7 +865,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.alpachiri@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/alpachiri.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -925,7 +925,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.toay@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/toay2.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -986,7 +986,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.generalacha@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/acha.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -1076,7 +1076,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.bernasconi@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/bernasconi.PNG",
         galeria:[],
         redes:{
             facebook:"",
