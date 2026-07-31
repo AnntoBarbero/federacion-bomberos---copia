@@ -624,7 +624,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.lonquimay@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/lonquimay.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -805,7 +805,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.macachin@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/macachin.PNG",
         galeria:[],
         redes:{
             facebook:"",
@@ -835,7 +835,7 @@ const cuarteles = [
         correos:{
             oficial:"asoc.guatrache@bomberosargentina.org.ar"
         },
-        imagen:"",
+        imagen:"../img/cuarteles/guatrache.PNG",
         galeria:[],
         redes:{
             facebook:"",
